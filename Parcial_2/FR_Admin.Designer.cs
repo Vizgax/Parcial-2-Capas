@@ -32,22 +32,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_Admin));
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.PN_User = new System.Windows.Forms.Panel();
+            this.DGV_Users = new System.Windows.Forms.DataGridView();
             this.PN_Inicio = new System.Windows.Forms.Panel();
             this.DGV_Product = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BTN_User = new System.Windows.Forms.Button();
+            this.IMG_List = new System.Windows.Forms.ImageList(this.components);
             this.BTN_Product = new System.Windows.Forms.Button();
             this.LB = new System.Windows.Forms.Label();
             this.LB_User = new System.Windows.Forms.Label();
             this.LB_Time = new System.Windows.Forms.Label();
-            this.IMG_List = new System.Windows.Forms.ImageList(this.components);
-            this.DGV_Users = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.PN_User.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Users)).BeginInit();
             this.PN_Inicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Product)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_Users)).BeginInit();
             this.SuspendLayout();
             // 
             // Timer
@@ -64,6 +64,15 @@
             this.PN_User.Name = "PN_User";
             this.PN_User.Size = new System.Drawing.Size(543, 329);
             this.PN_User.TabIndex = 11;
+            // 
+            // DGV_Users
+            // 
+            this.DGV_Users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Users.Location = new System.Drawing.Point(14, 18);
+            this.DGV_Users.Name = "DGV_Users";
+            this.DGV_Users.ReadOnly = true;
+            this.DGV_Users.Size = new System.Drawing.Size(512, 291);
+            this.DGV_Users.TabIndex = 0;
             // 
             // PN_Inicio
             // 
@@ -115,6 +124,15 @@
             this.BTN_User.UseVisualStyleBackColor = false;
             this.BTN_User.Click += new System.EventHandler(this.BTN_User_Click);
             // 
+            // IMG_List
+            // 
+            this.IMG_List.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("IMG_List.ImageStream")));
+            this.IMG_List.TransparentColor = System.Drawing.Color.Transparent;
+            this.IMG_List.Images.SetKeyName(0, "boton-editar.png");
+            this.IMG_List.Images.SetKeyName(1, "hogar.png");
+            this.IMG_List.Images.SetKeyName(2, "informacion.png");
+            this.IMG_List.Images.SetKeyName(3, "List.png");
+            // 
             // BTN_Product
             // 
             this.BTN_Product.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -163,24 +181,6 @@
             this.LB_Time.Size = new System.Drawing.Size(0, 16);
             this.LB_Time.TabIndex = 0;
             // 
-            // IMG_List
-            // 
-            this.IMG_List.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("IMG_List.ImageStream")));
-            this.IMG_List.TransparentColor = System.Drawing.Color.Transparent;
-            this.IMG_List.Images.SetKeyName(0, "boton-editar.png");
-            this.IMG_List.Images.SetKeyName(1, "hogar.png");
-            this.IMG_List.Images.SetKeyName(2, "informacion.png");
-            this.IMG_List.Images.SetKeyName(3, "List.png");
-            // 
-            // DGV_Users
-            // 
-            this.DGV_Users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_Users.Location = new System.Drawing.Point(14, 18);
-            this.DGV_Users.Name = "DGV_Users";
-            this.DGV_Users.ReadOnly = true;
-            this.DGV_Users.Size = new System.Drawing.Size(512, 291);
-            this.DGV_Users.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -202,14 +202,15 @@
             this.Controls.Add(this.PN_Inicio);
             this.Controls.Add(this.panel1);
             this.Name = "FR_Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pagina Admin";
             this.Load += new System.EventHandler(this.FR_Admin_Load);
             this.PN_User.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Users)).EndInit();
             this.PN_Inicio.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Product)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_Users)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

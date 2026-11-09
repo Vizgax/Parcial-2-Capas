@@ -359,6 +359,7 @@
             this.Controls.Add(this.PN_Inicio);
             this.Controls.Add(this.panel1);
             this.Name = "FR_User";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pagina Usuario";
             this.Load += new System.EventHandler(this.FR_User_Load);
             this.panel1.ResumeLayout(false);

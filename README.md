@@ -28,21 +28,21 @@ El menú lateral queda a la izquierda; en la **parte inferior** se muestra *qui�
 
 |Página Administrador|Página Usuario|
 |-|-|
-|!\[Admin](docs/img/admin\_productos.png)|!\[Usuario](docs/img/Productos_Usuarios.png)|
-|!\[Admin usuarios](docs/img/admin\_usuarios.png)|!\[Perfil usuario](docs/img/Informacion_Usuarios.png)|
+|!\[Admin](https://github.com/Vizgax/Parcial-2-Capas/blob/main/docs/img/Productos_Admin.png)|!\[Productos](https://github.com/Vizgax/Parcial-2-Capas/blob/main/docs/img/Productos_Usuarios.png)|
+|!\[Admin usuarios](https://github.com/Vizgax/Parcial-2-Capas/blob/main/docs/img/Usuarios_Admin.png)|!\[Perfil usuario](https://github.com/Vizgax/Parcial-2-Capas/blob/main/docs/img/Informacion_Usuario.png)|
 
 ### Inicio de sesión
 
-!\[Login](docs/img/Login.png)
+!\[Login](https://github.com/Vizgax/Parcial-2-Capas/blob/main/docs/img/Login.png)
 
 ### Validaciones
 
 |Caso|Resultado esperado|Captura|
 |-|-|-|
-|Usuario vacío|"Escriba su nombre de usuario."|!\[v1](docs/img/Error_1.png)|
-|Contraseña vacía|"Escriba su contraseña."|!\[v2](docs/img/Error_2.png)|
-|Credenciales incorrectas|"Usuario o contraseña incorrectos." (mismo mensaje si el usuario no existe, para no revelar datos)|!\[v3](docs/img/Error_3.png)|
-|Cambio de contraseña: no coinciden / < 8 caracteres / sin letras y números|Mensaje con la regla incumplida|!\[v4](docs/img/Error_4.png)|
+|Usuario vacío|"Escriba su nombre de usuario."|!\[v1](https://github.com/Vizgax/Parcial-2-Capas/blob/main/docs/img/Error_1.png)|
+|Contraseña vacía|"Escriba su contraseña."|!\[v2](https://github.com/Vizgax/Parcial-2-Capas/blob/main/docs/img/Error_2.png)|
+|Credenciales incorrectas|"Usuario o contraseña incorrectos." (mismo mensaje si el usuario no existe, para no revelar datos)|!\[v3](https://github.com/Vizgax/Parcial-2-Capas/blob/main/docs/img/Error_3.png)|
+|Cambio de contraseña: no coinciden / < 8 caracteres / sin letras y números|Mensaje con la regla incumplida|!\[v4](https://github.com/Vizgax/Parcial-2-Capas/blob/main/docs/img/Error_4.png)|
 
 \---
 
